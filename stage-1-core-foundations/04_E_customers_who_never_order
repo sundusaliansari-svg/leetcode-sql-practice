@@ -1,0 +1,21 @@
+/* ============================================================
+   PROBLEM: Customers Who Never Order
+   SOURCE: https://leetcode.com/problems/customers-who-never-order/
+   DIFFICULTY: Easy (E)
+   TOPIC: Joins & Filtering
+   ============================================================ */
+
+/* Problem Statement (simplified):
+Find all customers who never placed any orders.
+Return only the names of such customers.
+*/
+
+-- Solution
+Select 
+name as Customers
+From Customers
+WHERE NOT EXISTS(
+    SELECT 1
+    FROM Orders
+where Customers.id= Orders.customerId
+);
