@@ -1,6 +1,7 @@
 /* ============================================================
    PROBLEM: Combine Two Tables
    SOURCE: https://leetcode.com/problems/combine-two-tables/
+   DIFFICULTY: Easy (E)
    TOPIC: Joins & Aggregations
    ============================================================ */
 
