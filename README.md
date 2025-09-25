@@ -22,7 +22,11 @@ I’m solving SQL Problems and organizing them into clear learning stages to bui
 ---
 
 ## 📈 Progress Tracker
-- **Day 1** → Completed 2 problems   
+- **Day 1** →## Problems Solved
+1. [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) → [`01_combine_two_tables.sql`](01_combine_two_tables.sql) (E)  
+2. [Employee Bonus](https://leetcode.com/problems/employee-bonus/) → [`02_employee_bonus.sql`](02_employee_bonus.sql) (E)  
+3. [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) → [`03_duplicate_emails.sql`](03_duplicate_emails.sql) (E)  
+4. [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) → [`04_customers_who_never_order.sql`](04_customers_who_never_order.sql) (E)     
 - *(updated daily)* 
 
 
