@@ -1,0 +1,33 @@
+/* ============================================================
+   PROBLEM: Second Highest Salary
+   SOURCE: https://leetcode.com/problems/second-highest-salary/description/
+   DIFFICULTY: MED (M)
+   TOPIC: Joins & Aggregations
+   ============================================================ */
+
+/* Problem Statement:
+Write a solution to find the second highest distinct salary from the Employee table. 
+If there is no second highest salary, return null (return None in Pandas).
+*/
+
+#### 🧠 SQL Solutions
+- **Subquery + MAX()**
+Select MAX(salary) as SecondHighestSalary from Employee where salary <(select MAX(salary) from Employee)
+
+- **CTE + DENSE_RANK()**
+With ranked as(
+Select salary, DENSE_RANK() over (order by salary desc) as rnk
+ from employee
+)
+select (select salary from ranked where rnk=2)  as SecondHighestSalary
+
+- **LIMIT + OFFSET**
+select 
+ifnull((
+    select distinct salary
+    from employee
+    order by salary desc
+    limit 1 offset 1
+), null) as SecondHighestSalary
+
+
