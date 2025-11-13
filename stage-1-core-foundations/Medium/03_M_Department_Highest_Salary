@@ -1,3 +1,11 @@
+/* ============================================================
+   PROBLEM: Department Highest Salary
+   SOURCE: https://leetcode.com/problems/department-highest-salary/description/
+   DIFFICULTY: MED (M)
+   TOPIC: Joins & Aggregations
+   ============================================================ */
+
+/* Problem Statement:
 Table: Employee
 
 +--------------+---------+
@@ -26,9 +34,26 @@ Each row of this table indicates the ID of a department and its name.
  
 
 Write a solution to find employees who have the highest salary in each of the departments.
-
 Return the result table in any order.
+*/
 
-The result format is in the following example.
+#### 🧠 SQL Solutions
+--Joins&Aggregration
+select d.name as Department, e.name as Employee, e.salary as Salary
+from Employee e
+join Department d on e.departmentId = d.id
+where(e.departmentId, e.salary) IN(
+    Select departmentId, MAX(salary)
+    from Employee 
+    Group BY departmentId)
 
+--Windows Function
 
+select d.name as Department , e.name as Employee, e.salary as Salary
+from (
+    select name, salary, departmentId,
+    DENSE_RANK() OVER (PARTITION BY departmentId order By salary Desc ) AS rnk
+    From Employee
+    ) e
+    join Department d on e.departmentId =d.id
+    where rnk = 1;
