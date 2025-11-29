@@ -1,6 +1,6 @@
 # LeetCode SQL Practice 🚀
 
-This repository documents my daily SQL practice journey on [LeetCode](https://leetcode.com/).  
+This repository documents my SQL practice journey on [LeetCode](https://leetcode.com/).  
 I’m solving SQL Problems and organizing them into clear learning stages to build SQL expertise step by step.
 
 ---
@@ -22,13 +22,13 @@ I’m solving SQL Problems and organizing them into clear learning stages to bui
 ---
 
 ## 📈 Progress Tracker
-- **Day 1** →## Problems Solved
+- **Stage-1 Easy** →## Problems Solved
 1. [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) → [`01_combine_two_tables.sql`](01_combine_two_tables.sql) (E)  
 2. [Employee Bonus](https://leetcode.com/problems/employee-bonus/) → [`02_employee_bonus.sql`](02_employee_bonus.sql) (E)  
 3. [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) → [`03_duplicate_emails.sql`](03_duplicate_emails.sql) (E)  
-4. [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) → [`04_customers_who_never_order.sql`](04_customers_who_never_order.sql) (E)     
-- *(updated daily)* 
-
+4. [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) → [`04_customers_who_never_order.sql`](04_customers_who_never_order.sql) (E)
+- **Stage-1 Medium** →## Problems Solved     
+1. [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) → [`01_second_highest_salary.sql`](01_duplicate_emails.sql) (M) 
 
 ## 🔗 Profile
 - https://leetcode.com/u/SundusAli/
